@@ -1,0 +1,82 @@
+// lear
+// Advice Generator
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+// Colors
+$lightCyan: hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+$grayishBlue: hsl(217, 19%, 38%);
+$darkGrayishBlue: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+
+body {
+  background-color: $darkBlue;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+// Container
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: min(450px, 90vw);
+  background-color: $darkGrayishBlue;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+
+  .divider-img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .heading {
+    font-size: 0.875rem;
+    color: $neonGreen;
+    letter-spacing: 5px;
+  }
+
+  .advice-text {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    color: $lightCyan;
+  }
+
+  .dice-btn {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    bottom: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: $neonGreen;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 1rem $neonGreen;
+    }
+  }
+}

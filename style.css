@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: min(450px, 90vw);
+  background-color: hsl(217, 19%, 24%);
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.container .divider-img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.container .heading {
+  font-size: 0.875rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 5px;
+}
+.container .advice-text {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  color: hsl(193, 38%, 86%);
+}
+.container .dice-btn {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+.container .dice-btn img {
+  width: 24px;
+}
+.container .dice-btn:hover {
+  box-shadow: 0 0 1rem hsl(150, 100%, 66%);
+}/*# sourceMappingURL=style.css.map */
